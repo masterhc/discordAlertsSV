@@ -54,5 +54,5 @@ function init(bot)
 
 function message(ips, bot)
 {
-    bot.users.cache.get('186540961650835456').send(`Change in NetWork: ${JSON.stringify(ips[i])}`)
+    bot.users.cache.get('186540961650835456').send(`Change in NetWork: ${JSON.stringify(ips)}`)
 }
