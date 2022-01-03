@@ -35,12 +35,14 @@ function checkIP()
                         results[name] = [];
                     }
                     results[name].push(net.address);
+                    console.log('IPCache, results, equals', IPCache, results, IPCache==results);
                     if(IPCache != results)
                     {
                         IPCache = results;
                         resolve(results)
                     }
                 }
+                reject();
             }
         }
     })
